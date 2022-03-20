@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Neuton:wght@300&family=Racing+Sans+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(248, 248, 247);
+    color: rgb(41, 60, 97);
+    font-family: sans-serif;
+    font-size: 20px;
+    border: 0px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 10%;
+    height: 100vh;
+}
+
+section {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding-top: 5px;
+}
+
+.block {
+    margin-top:50px;
+}
+
+.logo {
+    color: cornflowerblue;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 150px;
+}
+
+.darker {
+    color: rgb(41, 60, 97);
+}
+
+h1, h2 {
+    color: cornflowerblue;
+    margin-right: 10px;
+}
+.logo h2 {
+    font-size: 50px;
+}
+
+.main h2 {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.anim1 {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.anim2 {
+    animation: fadeInAnimation2 ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+span {
+    display: flex;
+    flex-direction: row;
+}
+
+#dot {
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes fadeInAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+}
+
+@keyframes fadeInAnimation2 {
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@media screen and (max-width: 800px) {
+    span {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
