@@ -86,7 +86,7 @@ span {
     flex-direction: row;
 }
 
-#dot {
+.dot {
     display: flex;
     flex-direction: row;
 }
